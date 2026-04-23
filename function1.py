@@ -19,7 +19,12 @@ def add_student():
     "group": group,
     "rating": rating
     }
-FUFUFUFUFUFUUF
 
     print("Студент добавлен. Его ID:", student["id"])
 
+
+    data["students"].append(student)
+    data["next_id"] += 1
+    save_data(data)
+
+    print("Студент добавлен. Его ID:", student["id"])
