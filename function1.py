@@ -1,7 +1,9 @@
 from app import *
+
 def add_student():
     data = load_data()
 
+    id = int(input("Введите ID: "))
     name = input("Введите имя: ")
     surname = input("Введите фамилию: ")
     patronymic = input("Введите отчество: ")
@@ -10,9 +12,8 @@ def add_student():
     for i in range(1, 5):
         rate = int(input(f"Введите {i}-ую оценку: "))
         rating.append(rate)
-
     student = {
-    "id": data["next_id"],
+    "id": id,
     "name": name,
     "surname": surname,
     "patronymic": patronymic,
@@ -24,7 +25,7 @@ def add_student():
 
 
     data["students"].append(student)
-    data["next_id"] += 1
     save_data(data)
 
     print("Студент добавлен. Его ID:", student["id"])
+    return student

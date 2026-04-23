@@ -1,4 +1,5 @@
-from function1 import *
+from app import *
+from function1 import add_student
 from function2 import *
 from function3 import *
 from function4 import *
