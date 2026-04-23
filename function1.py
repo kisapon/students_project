@@ -11,20 +11,10 @@ def add_student():
         rate = int(input(f"Введите {i}-ую оценку: "))
         rating.append(rate)
 
-    student = {
-    "id": data["next_id"],
-    "name": name,
-    "surname": surname,
-    "patronymic": patronymic,
-    "group": group,
-    "rating": rating
-    }
+KZKZKZKKZZKZKZKKZKZKZKKZK
 
     data["students"].append(student)
     data["next_id"] += 1
     save_data(data)
 
     print("Студент добавлен. Его ID:", student["id"])
-
-
-БЕБЕБЕБЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕ
